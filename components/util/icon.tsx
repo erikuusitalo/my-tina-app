@@ -121,6 +121,8 @@ export const Icon = ({
   const iconName = data.name || Object.keys(iconOptions)[0];
   const IconSVG = iconOptions[iconName][theme.icon === "boxicon" ? "bi" : "hi"];
 
+  console.log(IconSVG);
+
   const iconSizeClasses = data.size && iconSizeClass[data.size];
 
   /* Full class strings are required for Tailwind's just-in-time mode,
@@ -149,6 +151,7 @@ export const Icon = ({
           ? "white"
           : iconColor
       ].regular;
+
     return (
       <IconSVG
         data-tinafield={tinaField}
