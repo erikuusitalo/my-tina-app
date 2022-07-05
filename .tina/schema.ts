@@ -379,8 +379,8 @@ export const tinaConfig = defineConfig({
           return undefined;
         }
         if (["page"].includes(collection.name)) {
-          if (document._sys.filename === "home") {
-            return `/`;
+          if (document._sys.filename === "index") {
+            return `/index`;
           }
           if (document._sys.filename === "about") {
             return `/about`;
