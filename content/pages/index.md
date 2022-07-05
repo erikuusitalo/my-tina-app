@@ -48,9 +48,7 @@ blocks:
     color: tint
     _template: features
   - body: |
-      # Is this awesome or what
-
-      Cant imagine this beein
+      Hej detta är bara ett block
     color: default
     _template: content
 ---
